@@ -45,8 +45,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 291.0, 419.0, 95.0, 22.0 ],
-					"text" : "round @mode 0"
+					"patching_rect" : [ 291.0, 419.0, 39.0, 22.0 ],
+					"text" : "round"
 				}
 
 			}

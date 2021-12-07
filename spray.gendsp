@@ -487,11 +487,13 @@
 				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-11",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 192.0, 14.0, 71.0, 20.0 ],
-					"text" : "DURATION"
+					"patching_rect" : [ 192.0, 14.0, 71.0, 33.0 ],
+					"presentation_linecount" : 2,
+					"text" : "MAX DURATION"
 				}
 
 			}
@@ -527,7 +529,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 230.0, 93.0, 150.0, 100.0 ],
-					"text" : "max amount we can add:\n1. if (all): current_buffer_length - position - duration\n2. if (selection): selection_end - postion - duration"
+					"text" : "max amount we can add:\n1. if (all): current_buffer_length - position - max duration\n2. if (selection): selection_end - postion - max duration"
 				}
 
 			}
@@ -626,7 +628,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 1 ],
-					"midpoints" : [ 171.5, 172.0, 182.0, 172.0 ],
+					"midpoints" : [ 171.5, 47.0, 182.0, 47.0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -836,8 +838,7 @@
 				}
 
 			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

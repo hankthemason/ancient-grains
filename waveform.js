@@ -71,13 +71,10 @@ const makeLine = () => {
   //   currentBufferLength,
   // });
   isPlaying = true;
-  maxApi.post("in makeLine function");
   maxApi.outlet("lineList", lineList);
 };
 
 maxApi.addHandler("handlePlayPause", (status) => {
-  maxApi.post("in Here");
-  maxApi.post({ isPlaying, isPaused, currentBufferLength });
   const play = status !== "play" ? true : false;
   if (play) {
     if (isPaused) {
@@ -105,11 +102,9 @@ maxApi.addHandler("reset", () => {
 });
 
 maxApi.addHandler("setCurrentBufferLength", (length) => {
-  maxApi.post({ isPlaying });
   currentBufferLength = length;
   const outOfBounds = mostRecentSelectionEnd > currentBufferLength;
   if (outOfBounds && isPlaying && !isPaused) {
-    maxApi.post("in  here");
     maxApi.outlet("lineInstructions", "stop");
     position = 0;
     selectionEnd = 0;

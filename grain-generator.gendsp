@@ -52,17 +52,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-126",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 656.0, 214.0, 35.0, 22.0 ],
-					"text" : "out 4"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-123",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -70,29 +59,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1181.0, 61.0, 70.0, 22.0 ],
 					"text" : "mstosamps"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-122",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 833.0, 261.0, 70.0, 22.0 ],
-					"text" : "sampstoms"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-93",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 718.0, 685.0, 35.0, 22.0 ],
-					"text" : "out 3"
 				}
 
 			}
@@ -873,7 +839,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 770.5, 13.0, 165.0, 22.0 ],
+					"patching_rect" : [ 770.5, 19.5, 165.0, 22.0 ],
 					"text" : "current_buffer_length.gendsp"
 				}
 
@@ -1977,13 +1943,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-93", 0 ],
-					"source" : [ "obj-122", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-63", 3 ],
 					"midpoints" : [ 1190.5, 89.0, 1177.0, 89.0, 1177.0, 6.0, 926.0, 6.0 ],
 					"source" : [ "obj-123", 0 ]
@@ -2288,14 +2247,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-122", 0 ],
-					"order" : 0,
-					"source" : [ "obj-46", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"midpoints" : [ 209.5, 484.0, 44.5, 484.0 ],
 					"source" : [ "obj-46", 0 ]
@@ -2306,7 +2257,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"midpoints" : [ 221.0, 495.0, 64.25, 495.0 ],
-					"order" : 1,
 					"source" : [ "obj-46", 1 ]
 				}
 
